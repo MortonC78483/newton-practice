@@ -16,7 +16,7 @@ def optimize(x_cur, function, epsilon = 1e-5, diff = 1e-9, stop_iter = 5000):
     x_prev = -float('inf') # starting x_prev that won't violate tolerance
     iter = 0
 
-    while (x_cur - x_prev) > diff & iter < stop_iter: # while we haven't got under our tolerance
+    while (abs(x_cur - x_prev) > diff) & (iter < stop_iter): # while we haven't got under our tolerance
         x_prev = x_cur
         x_cur = x_prev - first_der(function, x_prev, epsilon)/second_der(function, x_prev, epsilon)
         iter += 1

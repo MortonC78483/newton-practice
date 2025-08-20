@@ -1,2 +1,5 @@
 # newton-practice
-Test repo for Newton's method -- Berkeley Computational Skills Workshop
+Berkeley Computational Skills Workshop
+
+Contains implementation of Newton's method.
+ 🐜  🐜  🐜  🐜  🐜  🐜  🐜  🐜  🐜  🐜  🐜  🐜 

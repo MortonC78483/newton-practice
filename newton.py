@@ -5,6 +5,7 @@ import autograd.numpy as np
 from scipy.linalg import inv 
 import math
 
+# This is the single variate version.
 def first_der(function, x, epsilon):
     """
     first_der uses forward differences to calculate the first derivative at a point
@@ -34,6 +35,7 @@ def second_der(function, x, epsilon):
     else:
         return num/(2 * epsilon)
 
+# This is the multi variate version.
 def single_variate_step(x_prev, x_cur, function, epsilon):
     x_prev = x_cur
     first = first_der(function, x_prev, epsilon)
